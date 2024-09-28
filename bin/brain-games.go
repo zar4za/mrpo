@@ -1,6 +1,6 @@
 package main
 
-import "mrpo/src/cli"
+import cli "mrpo/src"
 
 func main() {
 	var name string
