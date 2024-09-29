@@ -15,5 +15,5 @@ func main() {
 	games.Run(name, 3, games.CreateLcmQuestion)
 
 	fmt.Println("\nNow let's play Progression game!")
-	games.Run(name, 3, games.CreateLcmQuestion)
+	games.Run(name, 3, games.CreateProgressionQuestion)
 }

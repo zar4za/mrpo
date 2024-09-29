@@ -22,14 +22,14 @@ func (q *LcmQuestion) GetAnswer() string {
 }
 
 func CreateLcmQuestion() Question {
-	question := &LcmQuestion{
+	question := LcmQuestion{
 		a: rand.Intn(10) + 1,
 		b: rand.Intn(10) + 1,
 		c: rand.Intn(10) + 1,
 	}
 
 	question.lcm = lcm(question.a, question.b, question.c)
-	return question
+	return &question
 }
 
 func lcm(a int, b int, c int) int {
