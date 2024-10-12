@@ -1,7 +1,6 @@
 package games
 
 import (
-	"fmt"
 	"math/rand"
 	"strconv"
 	"strings"
@@ -28,7 +27,6 @@ func CreateProgressionQuestion() Question {
 
 	for i := 0; i < length; i++ {
 		progression = append(progression, strconv.Itoa(start*pow(ratio, i+1)))
-		fmt.Println(progression)
 	}
 
 	return &GeometricProgressionQuestion{
@@ -42,6 +40,5 @@ func pow(start int, pow int) int {
 	for i := 1; i <= pow; i++ {
 		base *= start
 	}
-	fmt.Println(base)
 	return base
 }
